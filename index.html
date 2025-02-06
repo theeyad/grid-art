@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Mondrian Project</title>
+  <style>
+    .flex-container {
+      display: flex;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-rows: 414px 296px 20px;
+      grid-template-columns: 320px 419px;
+      gap: 9px;
+      background-color: #000;
+    }
+
+    .red {
+      background-color: #E72F24;
+    }
+
+    .item {
+      background-color: #F0F1EC;
+    }
+
+    .second-grid-container {
+      display: grid;
+      grid-template-columns: 360px 50px;
+      grid-template-rows: 140px 156px;
+      gap: 9px;
+    }
+    .third.white {
+      grid-row: span 2;
+      height: 296px;
+    }
+
+    .blue {
+      background-color: #004592;
+      height: 130px;
+    }
+
+    .forth.white {
+      height: 176px;
+    }
+
+    .third-grid-container {
+      display: grid;
+      grid-template-columns: 198px 153px;
+      grid-template-rows: 20px;
+      gap: 9px;
+    }
+    .yellow {
+      background-color: #F9D01E;
+      width: 198px;
+    }
+
+    .black {
+      background-color: #232629;
+      width: 153px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="flex-container">
+    <div class="grid-container">
+      <div class="red"></div>
+      <div class="item first white"></div>
+      <div class="item second white"></div>
+      <div class="second-grid-container">
+        <div class="item third white"></div>
+        <div class="blue"></div>
+        <div class="item forth white"></div>
+      </div>
+      <div class="item fifth white"></div>
+      <div class="third-grid-container">
+        <div class="yellow"></div>
+        <div class="black"></div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
